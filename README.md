@@ -12,7 +12,27 @@ Extract offline protein language model embedding representations using the follo
     *   [h5py]
     *   [scipy]
  
+After having installed the bio-embeddings package, you can:
 
+1. Use the pipeline like:
+
+    ```bash
+    bio_embeddings config.yml
+    ```
+
+2. Use the general purpose embedder objects via python, e.g.:
+
+    ```python
+    from bio_embeddings.embed import SeqVecEmbedder
+
+    embedder = SeqVecEmbedder()
+
+    embedding = embedder.embed("SEQVENCE")
+    ```
+After possessing the rdkit library, the physicochemical properties of molecules can be calculated.
+
+Protein physicochemical characteristics can be calculated using Python's built-in libraries.
+    
 *   **Datasets Sources**:
     *   [Benchmark](https://github.com/LiLabTsinghua/GotEnzymes2) 
     *   [External Dataset](https://github.com/zchwang/CataPro)
