@@ -1,0 +1,8 @@
+global:
+  sequences_file: ./XXXXXX.fasta
+  prefix: ./XXXXX
+t5_embeddings:
+  type: embed
+  protocol: prottrans_t5_xl_u50
+
+  
